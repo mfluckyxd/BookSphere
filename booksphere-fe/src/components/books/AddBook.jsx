@@ -55,13 +55,13 @@ const AddBook = ({setUpdateTrigger,setCurrentPage}) => {
     }
   };
   return (
-    <div>
+    <div className="add-book-container">
       <h3>Publish a book</h3>
       <form>
         <TextField
-          fullWidth
+          
           error={errors.title}
-          helperText={"This field is required"}
+          helperText={errors.title?"This field is required":""}
           id="newbook-title"
           label="Title"
           type="text"
@@ -71,9 +71,9 @@ const AddBook = ({setUpdateTrigger,setCurrentPage}) => {
           required
         />
         <TextField
-          fullWidth
+          
           error={errors.author}
-          helperText={"This field is required"}
+          helperText={errors.author?"This field is required":""}
           id="newbook-title"
           label="Author"
           type="text"
@@ -83,9 +83,9 @@ const AddBook = ({setUpdateTrigger,setCurrentPage}) => {
           required
         />
         <TextField
-          fullWidth
+          
           error={errors.description}
-          helperText={"This field is required"}
+          helperText={errors.description?"This field is required":""}
           id="newbook-description"
           label="Description"
           type="text"
@@ -95,7 +95,7 @@ const AddBook = ({setUpdateTrigger,setCurrentPage}) => {
           required
         />
         <TextField
-          fullWidth
+          
           id="newbook-bookUrl"
           label="Book URL"
           type="text"

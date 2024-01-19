@@ -48,7 +48,7 @@ const BooksList = ({ updateTrigger,currentPage }) => {
     fetchBooks();
   }, [updateTrigger,currentPage]);
   return (
-    <div>
+    <div className="booklist-container">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
