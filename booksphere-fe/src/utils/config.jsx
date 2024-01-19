@@ -1,1 +1,1 @@
-export const apiURL = 'http://localhost:5500/api/v1'
+export const apiURL = 'https://booksphere-q3j7.onrender.com/api/v1'
